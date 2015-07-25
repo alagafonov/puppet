@@ -1,1 +1,1 @@
-# puppet
+# Puppet deployment scripts 
