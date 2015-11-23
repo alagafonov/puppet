@@ -45,7 +45,7 @@ class { 'postgresql::server::postgis':
 # install postgres server
 postgresql::server::db { 'docs':
   user     => 'docs',
-  password => postgresql_password('docs', 'devDrs$$'),
+  password => postgresql_password('docs', 'xxx'),
   require  => Class['postgresql::server'],
 }
 
@@ -59,7 +59,7 @@ class { '::mysql::server':
 # create mysql database
 mysql::db { 'docs_wp':
   user     => 'docs',
-  password => 'devDrs$$',
+  password => 'xxx',
   host     => 'localhost',
   grant    => ['ALL'],
 }
